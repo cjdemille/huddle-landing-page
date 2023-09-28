@@ -22,7 +22,7 @@ header {
     background-image: url("./images/bg-mobile.svg");
     background-repeat: no-repeat;
     background-position: center center;  
-    background-size:contain;
+    background-size:cover;
     box-sizing: border-box;
     margin:0;
     padding:0;
@@ -48,7 +48,7 @@ header {
     margin-bottom:3rem;
     width:100vw;
     box-sizing: border-box;
-    display: block;
+    /* display: block; */
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -67,14 +67,18 @@ p{
 .button{
     color: hsl(257, 40%, 49%);
     background-color: white;
-    margin:1rem;
+    margin:1rem auto;
     padding:1rem 5rem;
     border-radius: 2rem;
     filter: drop-shadow(black 0 .25rem .5rem);
+    margin-top: 2rem;
+    display:block; 
+    width:30%;
+
 }
 
 a{
-    margin-top: 1rem;
+
     text-decoration: none;
 }
 
@@ -87,7 +91,10 @@ footer{
     display:block;
 }
 
-footer i{
+.social {
+    margin-top: 3rem;
+}
+.social i{
     border: .1rem solid white;
     padding:.5rem;
     margin: .5rem;
@@ -95,7 +102,58 @@ footer i{
     color:white;
 }
 
-footer i:hover{
+.socail i:hover{
     color:hsl(300, 69%, 71%);
     border-color:hsl(300, 69%, 71%);
+}
+
+
+@media screen and (min-width:1440px){
+    body{
+        background-image: url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center center;  
+        background-size:cover;
+        height:100vh;
+    }
+    header{
+        background-image:none;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom:0;
+    }
+    .main{
+        margin:0 1rem; 
+    }
+
+    h1, p{
+        text-align:left; 
+    }
+    h1{
+        font-size:3.75rem;
+    }
+    p{
+        font-size:1.6rem;
+        line-height: 1;
+    }
+    .button{
+        text-align: center;
+        margin:1rem 1.5rem;
+        padding:1rem 1rem;
+    }
+    a{
+        margin:0;
+    }
+    .social{
+        margin-top:0;
+    }
+    footer{
+        text-align: right;
+        padding:0 4rem;
+        margin-top:0;
+    }
 }
