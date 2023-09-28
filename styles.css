@@ -21,7 +21,7 @@ header {
     width:100vw;
     background-image: url("./images/bg-mobile.svg");
     background-repeat: no-repeat;
-    background-position: center center;  
+    background-position: center bottom;  
     background-size:cover;
     box-sizing: border-box;
     margin:0;
